@@ -22,10 +22,16 @@ $domains = [
 ];
 
 ?>
-<ul>
-    <?php foreach ($domains as $domain => $disc): ?>
-    <li><a href="http://<?php echo htmlspecialchars($domain, ENT_QUOTES) ?>"><?php echo htmlspecialchars($domain, ENT_QUOTES) ?></a> <?php echo htmlspecialchars($disc, ENT_QUOTES) ?></li>
-    <?php endforeach; ?>
-</ul>
+<p>
+    <ul>
+        <?php foreach ($domains as $domain => $disc): ?>
+        <li><a href="http://<?php echo htmlspecialchars($domain, ENT_QUOTES) ?>"><?php echo htmlspecialchars($domain, ENT_QUOTES) ?></a> <?php echo htmlspecialchars($disc, ENT_QUOTES) ?></li>
+        <?php endforeach; ?>
+    </ul>
+</p>
+<p>
+    Created by <a href="https://twitter.com/pinf0rt">pinfort</a><br>
+    <a href="https://github.com/pinfort/reiwa-domains">Source code</a>
+</p>
 </body>
 </html>
