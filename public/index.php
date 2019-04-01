@@ -5,6 +5,7 @@
     <title>新元号「令和」に便乗しているドメインの一覧</title>
 </head>
 <body>
+<h1>新元号「令和」に便乗しているドメインの一覧</h1>
 <?php
 /**
  * Created by PhpStorm.
@@ -23,7 +24,7 @@ $domains = [
 ?>
 <ul>
     <?php foreach ($domains as $domain => $disc): ?>
-    <li><a href="http://<?php echo $domain ?>"><?php echo $domain ?></a> <?php echo $disc ?></li>
+    <li><a href="http://<?php echo htmlspecialchars($domain, ENT_QUOTES) ?>"><?php echo htmlspecialchars($domain, ENT_QUOTES) ?></a> <?php echo htmlspecialchars($disc, ENT_QUOTES) ?></li>
     <?php endforeach; ?>
 </ul>
 </body>
